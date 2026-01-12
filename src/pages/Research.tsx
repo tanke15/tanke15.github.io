@@ -2,6 +2,14 @@ import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 
+// Import publication images
+import powershoringImg from "@/assets/publications/powershoring.png";
+import industrialPolicyEnergyImg from "@/assets/publications/industrial-policy-energy.png";
+import innovationEcosystemsImg from "@/assets/publications/innovation-ecosystems.png";
+import europeanGreenPolicyImg from "@/assets/publications/european-green-policy.png";
+import innovatingAntitrustImg from "@/assets/publications/innovating-antitrust.png";
+import convergingCompetitionImg from "@/assets/publications/converging-competition.png";
+
 const academicPublications = [
   {
     title: "Innovation Ecosystems in Antitrust",
@@ -43,45 +51,45 @@ const policyPublications = [
     venue: "Industry on the Road to 2050, the Climate Club",
     date: "November 2025",
     coauthors: "with Ricardo Hausmann",
-    link: "https://climate-club.org/",
-    image: "/images/powershoring.jpg",
+    link: "https://climate-club.org/wp-content/uploads/2025/11/Industry-on-the-road-to-2050.pdf",
+    image: powershoringImg,
   },
   {
     title: "Industrial Policy for Competitiveness in the Energy Transition",
     venue: "Bruegel",
     date: "March 2025",
     coauthors: "with Ricardo Hausmann",
-    link: "https://www.bruegel.org/policy-brief/industrial-policy-competitiveness-energy-transition",
-    image: "/images/bruegel-industrial.jpg",
+    link: "https://growthlab.hks.harvard.edu/publication/industrial-policy-for-competitiveness-in-the-energy-transition-2/",
+    image: industrialPolicyEnergyImg,
   },
   {
     title: "Promoting Innovation Ecosystems in Antitrust: A Framework for Antitrust Analysis Applied to Emerging AI Technologies",
     venue: "Roosevelt Institute",
     date: "June 2024",
-    link: "https://rooseveltinstitute.org/publications/promoting-innovation-ecosystems-in-antitrust/",
-    image: "/images/roosevelt-ai.jpg",
+    link: "https://rooseveltinstitute.org/publications/promoting-innovation/",
+    image: innovationEcosystemsImg,
   },
   {
     title: "A More Globally Minded European Green Industrial Policy",
     venue: "Bruegel",
     date: "July 2023",
     coauthors: "with Ricardo Hausmann",
-    link: "https://www.bruegel.org/blog-post/more-globally-minded-european-green-industrial-policy",
-    image: "/images/bruegel-green.jpg",
+    link: "https://growthlab.hks.harvard.edu/publication/a-more-globally-minded-european-green-industrial-policy/",
+    image: europeanGreenPolicyImg,
   },
   {
     title: "Innovating Antitrust Law: How Innovation Really Happens and How Antitrust Law Should Adapt",
     venue: "Roosevelt Institute",
     date: "October 19, 2022",
-    link: "https://rooseveltinstitute.org/publications/innovating-antitrust-law/",
-    image: "/images/roosevelt-antitrust.jpg",
+    link: "https://rooseveltinstitute.org/blog/how-innovation-really-happens/#:~:text=In%20particular%2C%20it%20would%20focus,public%20value%20in%20our%20economy.",
+    image: innovatingAntitrustImg,
   },
   {
     title: "Converging International Competition Enforcement in the Technology Industry",
     venue: "M-RCBG Associate Working Paper No. 190",
     date: "2022",
-    link: "https://www.hks.harvard.edu/centers/mrcbg/publications/awp/awp190",
-    image: "/images/mrcbg-tech.jpg",
+    link: "https://www.hks.harvard.edu/sites/default/files/centers/mrcbg/files/190_AWP_final.pdf",
+    image: convergingCompetitionImg,
   },
 ];
 
@@ -181,12 +189,12 @@ const Research = () => {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="group block bg-card border border-border rounded-sm overflow-hidden hover:border-accent/50 hover:shadow-lg transition-all duration-300"
                 >
-                  <div className="aspect-[16/10] bg-gradient-to-br from-accent/20 to-primary/10 flex items-center justify-center overflow-hidden">
-                    <div className="text-center p-6">
-                      <span className="text-xs font-medium uppercase tracking-wider text-accent">
-                        {item.venue}
-                      </span>
-                    </div>
+                  <div className="aspect-[16/10] bg-muted overflow-hidden">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
                   <div className="p-5">
                     <h3 className="font-medium text-foreground group-hover:text-accent transition-colors line-clamp-3 mb-2 flex items-start gap-2">
