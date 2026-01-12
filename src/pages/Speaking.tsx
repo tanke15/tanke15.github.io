@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Mic } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Layout from "@/components/layout/Layout";
+import capitolForumImage from "@/assets/speaking/capitol-forum.png";
+import henryGeorgeImage from "@/assets/speaking/henry-george-podcast.png";
 
 const featuredTalks = [
   {
@@ -8,12 +10,14 @@ const featuredTalks = [
     venue: "Capitol Forum",
     date: "June 4, 2025",
     link: "https://thecapitolforum.com/resource/antitrust-risks-in-the-openai-windsurf-deal-with-ketan-ahuja/",
+    image: capitolForumImage,
   },
   {
     title: "Rethinking Economics in Antitrust",
     venue: "The Henry George School Podcast",
     date: "May 15, 2025",
     link: "https://creators.spotify.com/pod/profile/smart-talk-hgsss/episodes/158--Rethinking-Economics---Using-antitrust-to-create-ecosystems-of-innovation-e32obhm/a-abuh12l",
+    image: henryGeorgeImage,
   },
 ];
 
@@ -95,8 +99,7 @@ const Speaking = () => {
               Speaking
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Selected talks, panels, and podcast appearances on antitrust, innovation, 
-              and the energy transition.
+              Selected talks, podcast appearances and speaking engagements.
             </p>
           </motion.div>
 
@@ -124,8 +127,12 @@ const Speaking = () => {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="group block bg-card border border-border rounded-sm overflow-hidden hover:border-accent/50 hover:shadow-lg transition-all duration-300"
                 >
-                  <div className="aspect-[16/9] bg-gradient-to-br from-accent/30 to-primary/20 flex items-center justify-center overflow-hidden">
-                    <Mic size={48} className="text-accent/60" />
+                  <div className="aspect-[16/9] bg-muted overflow-hidden">
+                    <img 
+                      src={item.image} 
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
                   <div className="p-6">
                     <h3 className="font-medium text-foreground text-lg group-hover:text-accent transition-colors mb-2 flex items-start gap-2">
