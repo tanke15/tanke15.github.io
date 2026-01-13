@@ -241,7 +241,7 @@ const Research = () => {
                 transition={{ duration: 0.4 }}
                 className="md:col-span-3 group block bg-card border border-border rounded-sm overflow-hidden hover:border-accent/50 hover:shadow-lg transition-all duration-300"
               >
-                <div className="aspect-[21/9] bg-muted overflow-hidden">
+                <div className="aspect-[3/1] bg-muted overflow-hidden">
                   <img
                     src={greenplexityImg}
                     alt="Greenplexity"
