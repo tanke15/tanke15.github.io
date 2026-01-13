@@ -71,7 +71,7 @@ const Writing = () => {
               Writing
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Commentary and public writing on the issues I work on.
+              Selected commentary and public writing on the issues I work on.
             </p>
           </motion.div>
 
