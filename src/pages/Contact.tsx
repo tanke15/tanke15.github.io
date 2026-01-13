@@ -17,8 +17,7 @@ const Contact = () => {
                 Get in Touch
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-                I welcome inquiries about research collaborations, speaking engagements, 
-                policy advisory work, and media opportunities.
+                I would love to hear from you!
               </p>
 
               <div className="space-y-6">
