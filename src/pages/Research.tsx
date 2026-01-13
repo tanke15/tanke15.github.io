@@ -48,7 +48,7 @@ const academicPublications = [
 
 const policyPublications = [
   {
-    title: "Generating Economic Growth Through Powershoring",
+    title: "Powershoring Pathways to Economic Growth",
     venue: "Industry on the Road to 2050, the Climate Club",
     date: "November 2025",
     coauthors: "with Ricardo Hausmann",
@@ -175,7 +175,7 @@ const Research = () => {
             className="mt-16"
           >
             <h2 className="text-2xl font-serif font-medium text-foreground mb-8 pb-2 border-b border-border">
-              Policy Publications
+              Selected Policy Publications
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {policyPublications.map((item, index) => (
