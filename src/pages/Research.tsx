@@ -9,6 +9,7 @@ import innovationEcosystemsImg from "@/assets/publications/innovation-ecosystems
 import europeanGreenPolicyImg from "@/assets/publications/european-green-policy.png";
 import innovatingAntitrustImg from "@/assets/publications/innovating-antitrust.png";
 import convergingCompetitionImg from "@/assets/publications/converging-competition.png";
+import greenplexityImg from "@/assets/greenplexity.png";
 
 const academicPublications = [
   {
@@ -162,6 +163,51 @@ const Research = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </motion.div>
+
+          {/* Greenplexity Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mt-16"
+          >
+            <h2 className="text-2xl font-serif font-medium text-foreground mb-8 pb-2 border-b border-border">
+              Greenplexity
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8 items-start">
+              <div className="text-muted-foreground leading-relaxed">
+                <p>
+                  Greenplexity is a digital tool that helps policymakers craft industrial strategies for green growth in different countries, mapping countries' capabilities to reveal their opportunities in value chains for producing energy technologies. I led the research team for Greenplexity, working with Growth Lab colleagues to produce this tool.
+                </p>
+              </div>
+              <motion.a
+                href="https://growthlab.app/greenplexity?country=710&year=2023"
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4 }}
+                className="group block bg-card border border-border rounded-sm overflow-hidden hover:border-accent/50 hover:shadow-lg transition-all duration-300"
+              >
+                <div className="aspect-[16/10] bg-muted overflow-hidden">
+                  <img
+                    src={greenplexityImg}
+                    alt="Greenplexity"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="font-medium text-foreground group-hover:text-accent transition-colors mb-2 flex items-start gap-2">
+                    <span>Greenplexity</span>
+                    <ExternalLink size={14} className="opacity-50 flex-shrink-0 mt-1" />
+                  </h3>
+                  <p className="text-sm text-accent">November 2024 - Present</p>
+                </div>
+              </motion.a>
             </div>
           </motion.div>
 
