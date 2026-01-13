@@ -27,7 +27,7 @@ const writingItems = [
   },
   {
     title: "The CFPB performs an ancient social function",
-    venue: "Future Nexus",
+    venue: "Fintech Nexus",
     date: "March 2025",
     link: "https://www.heyfuturenexus.com/opinion-the-cfpb-performs-an-ancient-social-function/",
     image: cfpbImg,
@@ -96,12 +96,17 @@ const Writing = () => {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="group block bg-card border border-border rounded-sm overflow-hidden hover:border-accent/50 hover:shadow-lg transition-all duration-300"
                 >
-                  <div className="aspect-[16/10] bg-muted overflow-hidden">
+                  <div className="aspect-[16/10] bg-muted overflow-hidden relative">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                      <span className="text-xs font-medium uppercase tracking-wider text-white/90">
+                        {item.venue}
+                      </span>
+                    </div>
                   </div>
                   <div className="p-5">
                     <h3 className="font-medium text-foreground group-hover:text-accent transition-colors line-clamp-3 mb-2 flex items-start gap-2">
