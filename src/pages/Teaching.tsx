@@ -39,9 +39,7 @@ const Teaching = () => {
               Teaching
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I am passionate about teaching and have designed and taught courses at 
-              Harvard Kennedy School and Yale School of Management on topics ranging from 
-              green growth to antitrust policy.
+              I love designing creative, interdisciplinary courses that challenge students to make connections and build better intuitions on policy problems. I have designed and taught courses on antitrust and green growth at leading universities.
             </p>
           </motion.div>
 
