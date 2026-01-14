@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center py-16 lg:py-24">
+      <section className="relative min-h-[90vh] flex items-center py-8 lg:py-12">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Text Content */}
@@ -70,7 +70,7 @@ const Index = () => {
               <img
                 src={profilePhoto}
                 alt="Ketan Ahuja"
-                className="w-72 md:w-80 lg:w-96 rounded-sm object-cover aspect-[3/4] shadow-lg"
+                className="w-80 md:w-96 lg:w-[28rem] rounded-sm object-cover aspect-[3/4] shadow-lg"
               />
             </motion.div>
           </div>
