@@ -33,8 +33,7 @@ const Index = () => {
                 and supporting innovation and economic growth.
               </p>
               <p className="mt-4 text-lg text-muted-foreground leading-relaxed max-w-xl">
-                My work bridges academic research and policy practice, helping policymakers make 
-                better policy with frontier research. I have been published by Cambridge University Press, 
+                My work aims to help policymakers make better policy with frontier research. I have been published by Cambridge University Press,
                 Harvard Kennedy School, the Financial Times, ProMarket, MSNBC, Bruegel and the Roosevelt 
                 Institute, among others.
               </p>
