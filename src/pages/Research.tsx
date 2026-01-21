@@ -14,8 +14,7 @@ import greenplexityImg from "@/assets/greenplexity.png";
 const academicPublications = [
   {
     title: "Innovation Ecosystems in Antitrust",
-    venue: "Cambridge Handbook on Theoretical Foundations of Antitrust and Competition Law",
-    year: "2026",
+    venue: "Elias Deutscher, Justin Lindeboom and Stavros Makris (eds.), Cambridge Handbook on Competition Law and Antitrust Theory (Cambridge University Press 2026)",
     note: "forthcoming",
   },
   {
