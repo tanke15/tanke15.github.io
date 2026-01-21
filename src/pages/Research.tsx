@@ -15,6 +15,7 @@ const academicPublications = [
   {
     title: "Innovation Ecosystems in Antitrust",
     venue: "Elias Deutscher, Justin Lindeboom and Stavros Makris (eds.), Cambridge Handbook on Competition Law and Antitrust Theory (Cambridge University Press 2026)",
+    year: "2026",
     note: "forthcoming",
   },
   {
